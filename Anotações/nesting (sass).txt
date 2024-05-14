@@ -1,0 +1,19 @@
+O que é Nesting?
+
+Nesting em Sass é a prática de aninhar seletores CSS dentro de outros seletores. Isso permite refletir a hierarquia HTML diretamente no arquivo de estilos, tornando o código mais legível e organizado.
+
+Benefícios do Nesting em Sass
+
+Legibilidade: Facilita a compreensão da estrutura do estilo, especialmente em layouts complexos.
+
+Manutenção: Alterações nos estilos são mais intuitivas, pois a hierarquia dos seletores é clara.
+
+Redução de Repetição: Diminui a necessidade de repetir o seletor pai em cada regra, resultando em um código mais conciso.
+
+------------------------------------------------------------------------------------------------
+
+IMPORTANTE!!!!
+
+Evitar Aninhamento Excessivo: Nesting muito profundo pode levar a seletores CSS excessivamente específicos, dificultando a manutenção do código.
+
+Limite de Profundidade: Recomenda-se limitar o nesting a três níveis de profundidade para manter o código legível e fácil de manter.
