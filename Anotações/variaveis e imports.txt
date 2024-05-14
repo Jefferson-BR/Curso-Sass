@@ -1,0 +1,15 @@
+Variáveis no Sass
+
+Definição: As variáveis no Sass são utilizadas para armazenar valores que podem ser reutilizados em várias partes do código.
+
+Sintaxe: Começam com um símbolo de cifrão $ seguido pelo nome da variável.
+
+Utilidade: Permitem a fácil atualização de valores em todo o código, como cores, fontes, tamanhos e outros.
+
+Imports no Sass
+
+Definição: Os imports no Sass permitem incluir o conteúdo de um arquivo Sass dentro de outro.
+
+Sintaxe: Utilizam a diretiva @import seguida do nome do arquivo.
+
+Utilidade: Ajudam na organização do código, permitindo dividi-lo em arquivos menores e mais gerenciáveis.
