@@ -1,0 +1,10 @@
+O que são funções em Sass?
+
+Em Sass (Syntactically Awesome Style Sheets), as funções são blocos de código reutilizável que podem aceitar argumentos, realizar cálculos e retornar um valor.
+Para que servem as funções em Sass?
+
+As funções em Sass são úteis para tornar o código mais modular, eficiente e fácil de manter. Elas ajudam na manipulação de cores, cálculos matemáticos, geração de valores dinâmicos, formatação de texto, entre outras tarefas.
+
+Como usar funções em Sass:
+
+As funções em Sass podem ser chamadas em qualquer lugar no seu código Sass, assim como outras funções ou mixins. Elas ajudam a evitar a repetição de código e a criar estilos mais dinâmicos e flexíveis.

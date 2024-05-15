@@ -1,0 +1,11 @@
+O que é herança estendida no SASS?
+
+A herança estendida é uma característica do SASS que permite que uma regra CSS herde os estilos de outra regra CSS. Isso ajuda a reduzir a repetição de código e torna o código mais modular e fácil de manter.
+
+Como funciona?
+
+Definição de um seletor de placeholder: Você pode definir um seletor de placeholder usando o % seguido pelo nome do seletor. Por exemplo: %botao { ... }. O seletor de placeholder define os estilos básicos que serão herdados por outros seletores.
+
+Extensão de um seletor de placeholder: Para herdar os estilos de um seletor de placeholder, você usa o operador @extend seguido pelo nome do seletor de placeholder. Por exemplo: .botao-pequeno { @extend %botao; ... }. Isso faz com que o seletor .botao-pequeno herde todos os estilos definidos dentro de %botao.
+
+Geração de CSS: Quando o SASS compila para CSS, os seletores que estendem um seletor de placeholder são combinados em uma única regra CSS que contém todos os estilos herdados.

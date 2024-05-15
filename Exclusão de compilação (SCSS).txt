@@ -1,0 +1,12 @@
+A declaração abaixo serve para dizer para o Sass, Não compilar arquivos dentro da pasta "Nome de sua preferencia".
+
+Essa declaração vai dentro do arquivos settings.json
+
+caminho: config/ pesquisar na barra de pesquisa "Sass" e ir até live sass compiler/ ir até Use new compiler e por fim clicar em "editar em settings.json"
+
+
+só copiar e colar em baixo antes de terminar as {} chaves
+
+"liveSassCompile.settings.excludeList": [
+        "**/scss/**"
+]

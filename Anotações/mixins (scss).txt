@@ -1,0 +1,7 @@
+Mixins no Sass
+
+Definição: Mixins no Sass são blocos reutilizáveis de estilos que podem aceitar argumentos, semelhantes a funções.
+
+Sintaxe: Definidos com a diretiva @mixin seguida pelo nome e, opcionalmente, parâmetros.
+
+Utilidade: Facilitam a reutilização de estilos complexos ou repetitivos em várias partes do código, permitindo também a customização através de argumentos.

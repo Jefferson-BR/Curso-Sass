@@ -1,0 +1,5 @@
+A minificação é um processo de compressão do código para reduzir seu tamanho, removendo espaços em branco, quebras de linha e outros caracteres desnecessários.
+
+Ao minificar funções em Sass, mantemos a mesma lógica e funcionalidade do código original, mas removemos espaços em branco e novas linhas para reduzir o tamanho do arquivo CSS final.
+
+A minificação é útil para reduzir o tamanho dos arquivos CSS, o que pode melhorar o desempenho do site, pois os arquivos carregam mais rapidamente.
