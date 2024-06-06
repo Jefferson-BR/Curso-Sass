@@ -1,0 +1,47 @@
+// Exemplo de Regras Nesting (Regras Aninhadas)
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none; // Remove os marcadores da lista
+        display: flex; // Exibe os itens da lista como flexbox
+        justify-content: center; // Centraliza os itens horizontalmente
+        align-items: center; // Centraliza os itens verticalmente
+        gap: 20px; // Espaçamento entre os itens
+        width: 100%; // Largura total
+        height: 100px; // Altura fixa
+        background-color: aquamarine; // Cor de fundo
+    }
+    
+    li {
+        font-family: Arial, Helvetica, sans-serif; // Fonte específica
+        font-size: 25px; // Tamanho da fonte
+        font-weight: bold; // Texto em negrito
+    }
+    
+    a {
+        text-decoration: none; // Remove a sublinha dos links
+
+        &:hover {
+            color: white; // Cor do texto ao passar o mouse
+            transition: 300ms all; // Transição suave para o hover
+        }
+    }
+}
+
+/*
+    - No CSS puro não é permitido fazer isso, geralmente isso deveria ser feito da seguinte forma:
+
+    nav ul {
+        estilos...
+    }
+
+    nav li {
+        estilos...
+    }
+
+    nav ul li a {
+        estilos...
+    }
+*/

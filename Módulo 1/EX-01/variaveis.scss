@@ -1,0 +1,51 @@
+// Definição de variáveis globais
+
+$font_default: Arial, Helvetica, sans-serif; // Fonte padrão
+$color_primary: #25fa3a; // Cor primária
+$body_color: #dddddd; // Cor de fundo do corpo
+$align_center: center; // Alinhamento centralizado
+$font_size_title: 30px; // Tamanho da fonte para títulos
+$font_size_p: 20px; // Tamanho da fonte para parágrafos
+$width_80: 80%; // Largura de 80% usada em parágrafos e spans
+
+// Estilos para o corpo
+body {
+    font-family: $font_default;
+    background-color: $body_color;
+}
+
+// Estilos para títulos h1
+h1 {
+    text-align: $align_center;
+    font-size: $font_size_title;
+    color: $color_primary;
+    margin-top: 20px;
+}
+
+// Estilos para parágrafos
+p {
+    $color_secondary: #25a5fa; // Cor secundária usada apenas em parágrafos
+    margin: 20px auto;
+    text-align: $align_center;
+    font-size: $font_size_p;
+    color: $color_secondary;
+    width: $width_80;
+}
+
+// Estilos para títulos h2
+h2 {
+    $color_tertiary: #e125fa; // Variável local para cor terciária
+    text-align: $align_center;
+    font-size: $font_size_title;
+    color: $color_tertiary;
+    margin-top: 20px;
+}
+
+// Estilos para spans
+span {
+    display: block;
+    margin: 20px auto;
+    text-align: $align_center;
+    font-size: $font_size_p;
+    width: $width_80;
+}

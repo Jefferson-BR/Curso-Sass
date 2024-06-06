@@ -1,0 +1,43 @@
+@import "../EX-03/scss/reset.scss";
+
+@mixin style_default_text { // Mixin para estilo padrão de texto
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin danger-text {
+    color: red;
+    @include style_default_text; // Inclui estilo padrão de texto
+}
+
+@mixin warning-text {
+    color: yellow;
+    @include style_default_text; // Inclui estilo padrão de texto
+}
+
+@mixin success-text {
+    color: green;
+    @include style_default_text; // Inclui estilo padrão de texto
+}
+
+@mixin info-text {
+    color: blue;
+    @include style_default_text; // Inclui estilo padrão de texto
+}
+
+.danger {
+    @include danger-text; // Aplica estilo danger-text
+}
+
+.warning {
+    @include warning-text; // Aplica estilo warning-text
+}
+
+.sucess {
+    @include success-text; // Aplica estilo success-text
+}
+
+.info {
+    @include info-text; // Aplica estilo info-text
+}

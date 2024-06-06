@@ -1,0 +1,23 @@
+.button-basic, .button-default, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+.button-basic:hover, .button-default:hover, .button-report:hover {
+  background-color: gray;
+  color: white;
+  transition: 300ms all;
+}
+
+.button-report {
+  background-color: #f2ff3f;
+}
+
+.button-default {
+  background-color: #c32cff;
+}/*# sourceMappingURL=extend.css.map */
