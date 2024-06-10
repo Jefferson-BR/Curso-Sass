@@ -1,0 +1,26 @@
+@charset "UTF-8";
+h1::before {
+  content: "12Text";
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2::after {
+  content: "H2-Text";
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p::before {
+  font-family: Arial, Helvetica, sans-serif;
+  content: "Substring encontrada na posição: 3";
+}
+
+/*
+    if($search !=null, ...)
+
+    - Aqui estamos testando uma condição. $search !=null verifica se a variável $search não é nula. Em outras palavras, estamos verificando se a função str-index() encontrou ou não a substring dentro da string. Se $search não for nulo, isso significa que a substring foi encontrada. "Substring encontrada na posição: 3"
+
+    - Se a condição do if for verdadeira (ou seja, se $search não for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring foi encontrada e mostra a posição onde ela foi encontrada na string principal.
+
+    - Se a condição do if for falsa (ou seja, se $search for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring não foi encontrada na string principal. Então, resumindo, se a variável $search não for nula, a mensagem "Substring encontrada na posição: [posição]" será exibida. Caso contrário, a mensagem "Substring não encontrada!" será exibida se a condição for falsa.
+
+*//*# sourceMappingURL=funcoes-em-string.css.map */

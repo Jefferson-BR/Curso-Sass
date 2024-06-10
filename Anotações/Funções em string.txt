@@ -1,0 +1,75 @@
+quote(string):
+
+O que faz: Adiciona aspas ao redor da string fornecida.
+Exemplo: quote(Hello world!)
+Resultado: "Hello world!"
+Detalhe: Se você tem um texto sem aspas e quer que ele fique com aspas, use essa função. É útil quando você precisa garantir que uma string esteja entre aspas.
+
+
+
+str-index(string, substring):
+
+O que faz: Encontra a posição da primeira ocorrência de uma substring dentro de uma string.
+Exemplo: str-index("Hello world!", "H")
+Resultado: 1
+Detalhe: A contagem começa em 1. Se você quer saber onde uma letra ou palavra aparece pela primeira vez dentro de outra palavra ou frase, essa função te mostra o número da posição.
+
+
+
+str-insert(string, insert, index):
+
+O que faz: Insere um texto em uma posição específica dentro de uma string.
+Exemplo: str-insert("Hello world!", " wonderful", 6)
+Resultado: "Hello wonderful world!"
+Detalhe: A contagem de posições começa em 1. Use essa função para adicionar texto em um lugar específico dentro de outro texto.
+
+
+
+str-length(string):
+
+O que faz: Conta quantos caracteres existem em uma string.
+Exemplo: str-length("Hello world!")
+Resultado: 12
+Detalhe: Cada letra, espaço, e símbolo conta como um caractere. Essa função te diz quantos caracteres há no total.
+
+
+
+str-slice(string, start, end):
+
+O que faz: Extrai uma parte da string, começando e terminando nas posições especificadas.
+Exemplo: str-slice("Hello world!", 2, 5)
+Resultado: "ello"
+Detalhe: A contagem começa em 1. Use essa função para pegar apenas uma parte específica de uma string.
+
+
+
+to-lower-case(string):
+
+O que faz: Converte todas as letras de uma string para minúsculas.
+Exemplo: to-lower-case("Hello World!")
+Resultado: "hello world!"
+Detalhe: Se você precisa que todo o texto esteja em letras minúsculas, use essa função.
+to-upper-case(string):
+
+O que faz: Converte todas as letras de uma string para maiúsculas.
+Exemplo: to-upper-case("Hello World!")
+Resultado: "HELLO WORLD!"
+Detalhe: Se você precisa que todo o texto esteja em letras maiúsculas, use essa função.
+
+
+
+unique-id():
+
+O que faz: Gera uma string única e aleatória.
+Exemplo: unique-id()
+Resultado: tyghefnsv (o valor real será diferente a cada vez)
+Detalhe: Use essa função quando precisar de um identificador exclusivo que não se repita dentro da mesma sessão Sass.
+
+
+
+unquote(string):
+
+O que faz: Remove as aspas ao redor de uma string, se houver.
+Exemplo: unquote("Hello world!")
+Resultado: Hello world!
+Detalhe: Se você tem uma string entre aspas e precisa dela sem as aspas, essa função faz isso para você.

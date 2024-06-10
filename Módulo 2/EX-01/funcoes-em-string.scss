@@ -1,0 +1,41 @@
+// Define variáveis
+$quoted-text: quote("12Text"); // Se por acaso o Text for removido ele vai apresentar um resultado falso.
+$quoted-text-2: quote("Text");
+$font: Arial, Helvetica, sans-serif;
+
+// Verifica a posição de uma substring dentro de outra
+// `str-index` trabalha com strings, então use strings sem `quote` para comparação correta.
+$search: str-index($quoted-text, $quoted-text-2);
+
+// Estilo para o pseudoelemento ::before de h1
+h1::before {
+    content: $quoted-text; // Usa a variável com a função quote aplicada
+    font-family: $font;
+}
+
+// Estilo para o pseudoelemento ::after de h2
+h2::after {
+    content: quote("H2-Text"); // Usa a função quote diretamente
+    font-family: $font;
+}
+
+// Estilo para o pseudoelemento ::before de p
+p::before {
+    font-family: $font;
+    // Verifica se a substring foi encontrada e exibe uma mensagem correspondente
+    content: if($search != null, "Substring encontrada na posição: #{$search}", "Substring não encontrada!");
+    // Note que content só funciona com pseudoElementos.
+}
+
+// Explicação do if():
+
+/*
+    if($search !=null, ...)
+    
+    - Aqui estamos testando uma condição. $search !=null verifica se a variável $search não é nula. Em outras palavras, estamos verificando se a função str-index() encontrou ou não a substring dentro da string. Se $search não for nulo, isso significa que a substring foi encontrada. "Substring encontrada na posição: #{$search}"
+    
+    - Se a condição do if for verdadeira (ou seja, se $search não for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring foi encontrada e mostra a posição onde ela foi encontrada na string principal.
+    
+    - Se a condição do if for falsa (ou seja, se $search for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring não foi encontrada na string principal. Então, resumindo, se a variável $search não for nula, a mensagem "Substring encontrada na posição: [posição]" será exibida. Caso contrário, a mensagem "Substring não encontrada!" será exibida se a condição for falsa.
+
+*/
