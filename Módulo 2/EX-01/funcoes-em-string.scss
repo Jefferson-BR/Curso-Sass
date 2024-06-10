@@ -13,12 +13,6 @@ h1::before {
     font-family: $font;
 }
 
-// Estilo para o pseudoelemento ::after de h2
-h2::after {
-    content: quote("H2-Text"); // Usa a função quote diretamente
-    font-family: $font;
-}
-
 // Estilo para o pseudoelemento ::before de p
 p::before {
     font-family: $font;
@@ -39,3 +33,15 @@ p::before {
     - Se a condição do if for falsa (ou seja, se $search for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring não foi encontrada na string principal. Então, resumindo, se a variável $search não for nula, a mensagem "Substring encontrada na posição: [posição]" será exibida. Caso contrário, a mensagem "Substring não encontrada!" será exibida se a condição for falsa.
 
 */
+
+
+$quoted-text-3: quote("Texto que vai no titulo , e depois tera um texto inserido");
+$insert-text: "H2";
+$position: 25;
+
+$new-text: str-insert($quoted-text-3, $insert-text, $position);
+
+h2::after {
+    content: $new-text; // Usa a função quote diretamente
+    font-family: $font;
+}

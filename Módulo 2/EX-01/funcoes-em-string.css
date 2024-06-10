@@ -4,11 +4,6 @@ h1::before {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h2::after {
-  content: "H2-Text";
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 p::before {
   font-family: Arial, Helvetica, sans-serif;
   content: "Substring encontrada na posição: 3";
@@ -23,4 +18,8 @@ p::before {
 
     - Se a condição do if for falsa (ou seja, se $search for nulo), este será o valor que será atribuído à propriedade content. Ele cria uma mensagem indicando que a substring não foi encontrada na string principal. Então, resumindo, se a variável $search não for nula, a mensagem "Substring encontrada na posição: [posição]" será exibida. Caso contrário, a mensagem "Substring não encontrada!" será exibida se a condição for falsa.
 
-*//*# sourceMappingURL=funcoes-em-string.css.map */
+*/
+h2::after {
+  content: "Texto que vai no titulo H2, e depois tera um texto inserido";
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=funcoes-em-string.css.map */
