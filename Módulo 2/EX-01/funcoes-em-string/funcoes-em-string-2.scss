@@ -1,0 +1,30 @@
+// Executar comandos no terminal
+
+// Retorna o comprimento da string
+@debug str-length("Hello world!"); // Resultado: 12
+@debug str-length("Sass");         // Resultado: 4
+@debug str-length("");             // Resultado: 0
+
+// Extrai uma parte da string
+@debug str-slice("Hello world!", 2, 5); // Resultado: "ello"
+@debug str-slice("Sass", 1, 2);         // Resultado: "Sa"
+@debug str-slice("abcdef", 3, 6);       // Resultado: "cdef"
+
+// Converte a string para letras minúsculas
+@debug to-lower-case("Hello World!"); // Resultado: "hello world!"
+@debug to-lower-case("SASS");         // Resultado: "sass"
+@debug to-lower-case("123ABC");       // Resultado: "123abc"
+
+// Converte a string para letras maiúsculas
+@debug to-upper-case("Hello World!"); // Resultado: "HELLO WORLD!"
+@debug to-upper-case("sass");         // Resultado: "SASS"
+@debug to-upper-case("123abc");       // Resultado: "123ABC"
+
+// Gera um ID único
+@debug unique-id(); // Resultado: Exemplo "tyghefnsv"
+@debug unique-id(); // Resultado: Exemplo "xkdjhsweq"
+
+// Remove as aspas da string
+@debug unquote('"Hello world!"'); // Resultado: Hello world!
+@debug unquote("'Sass'");         // Resultado: Sass
+@debug unquote('"123ABC"');       // Resultado: 123ABC
