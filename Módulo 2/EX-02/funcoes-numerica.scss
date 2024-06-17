@@ -1,0 +1,49 @@
+// Retorna o valor absoluto
+@debug abs(15);   // Resultado: 15
+@debug abs(-15);  // Resultado: 15
+@debug abs(-3.14); // Resultado: 3.14
+
+// Arredonda para cima
+@debug ceil(15.20);  // Resultado: 16
+@debug ceil(7.01);   // Resultado: 8
+@debug ceil(10.99);  // Resultado: 11
+
+// Verifica se os números são comparáveis
+@debug comparable(15px, 10px);  // Resultado: true
+@debug comparable(20mm, 1cm);   // Resultado: true
+@debug comparable(35px, 2em);   // Resultado: false
+@debug comparable(5s, 500ms);   // Resultado: true
+
+// Arredonda para baixo
+@debug floor(15.80);  // Resultado: 15
+@debug floor(7.99);   // Resultado: 7
+@debug floor(3.01);   // Resultado: 3
+
+// Retorna o maior valor
+@debug max(5, 7, 9, 0, -3, -7);  // Resultado: 9
+@debug max(1, 2, 3);             // Resultado: 3
+@debug max(-5, -10, -1);         // Resultado: -1
+
+// Retorna o menor valor
+@debug min(5, 7, 9, 0, -3, -7);  // Resultado: -7
+@debug min(1, 2, 3);             // Resultado: 1
+@debug min(-5, -10, -1);         // Resultado: -10
+
+// Converte para porcentagem
+@debug percentage(1.2);  // Resultado: 120%
+@debug percentage(0.5);  // Resultado: 50%
+@debug percentage(2);    // Resultado: 200%
+
+// Retorna um número aleatório entre 0 e 1
+@debug random(); // Resultado: Exemplo "0.45673"
+@debug random(); // Resultado: Exemplo "0.81234"
+
+// Retorna um número inteiro aleatório entre 1 e 6
+@debug random(6); // Resultado: Exemplo "4"
+@debug random(10); // Resultado: Exemplo "7"
+@debug random(100); // Resultado: Exemplo "42"
+
+// Arredonda para o inteiro mais próximo
+@debug round(15.20);  // Resultado: 15
+@debug round(15.80);  // Resultado: 16
+@debug round(7.50);   // Resultado: 8
