@@ -1,0 +1,82 @@
+@function double($n) {
+    @return $n * 2;
+  }
+  
+  // Chama a função 'double' com argumento 4
+  $result: call(double, 4);
+  
+  // Resultado: $result é 8
+
+// Verifica se o recurso 'global-variable-shadowing' está disponível
+$feature-available: feature-exists(global-variable-shadowing);
+
+// Resultado: $feature-available é true ou false
+
+// Verifica se a função 'rgb' existe
+$function-available: function-exists(rgb);
+
+// Resultado: $function-available é true
+
+@function add($a, $b) {
+    @return $a + $b;
+  }
+  
+  // Obtém a referência da função 'add'
+  $add-function: get-function(add);
+  
+  // Chama a função 'add' com argumentos 2 e 3
+  $result: call($add-function, 2, 3);
+  
+  // Resultado: $result é 5
+
+  $global-var: 42;
+
+  // Verifica se a variável global 'global-var' existe
+  $var-exists: global-variable-exists(global-var);
+  
+  // Resultado: $var-exists é true
+
+  $color: blue;
+
+// Inspeciona o valor da variável 'color'
+$inspected-value: inspect($color);
+
+// Resultado: $inspected-value é 'blue'
+
+@mixin example {}
+
+// Verifica se o mixin 'example' existe
+$mixin-available: mixin-exists(example);
+
+// Resultado: $mixin-available é true
+
+$value: 100px;
+
+// Obtém o tipo do valor
+$value-type: type-of($value);
+
+// Resultado: $value-type é 'number'
+
+$length: 10px;
+
+// Obtém a unidade do número
+$unit: unit($length);
+
+// Resultado: $unit é 'px'
+
+$length: 10px;
+$number: 42;
+
+// Verifica se os números são unitários
+$is-length-unitless: unitless($length);
+// Resultado: $is-length-unitless é false
+
+$is-number-unitless: unitless($number);
+// Resultado: $is-number-unitless é true
+
+$local-var: 100;
+
+// Verifica se a variável 'local-var' existe
+$var-exists-local: variable-exists(local-var);
+
+// Resultado: $var-exists-local é true

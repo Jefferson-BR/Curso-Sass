@@ -1,0 +1,90 @@
+$primary-colors: red, blue, green;
+
+// Adiciona 'yellow' ao final da lista
+$extended-colors: append($primary-colors, yellow);
+
+// Resultado: $extended-colors é 'red, blue, green, yellow'
+
+// Adiciona 'yellow' ao final da lista com um separador específico
+$extended-colors-space: append($primary-colors, yellow, space);
+
+// Resultado: $extended-colors-space é 'red blue green yellow'
+
+$shapes: circle, square, triangle;
+
+// Encontra o índice de 'square' na lista
+$square-index: index($shapes, square);
+
+// Resultado: $square-index é 2
+
+// Tenta encontrar um valor que não está na lista
+$pentagon-index: index($shapes, pentagon);
+
+// Resultado: $pentagon-index é null
+
+$dimensions-bracketed: 100px, 200px, 300px;
+$dimensions-unbracketed: 100px, 200px, 300px;
+
+// Verifica se a lista está entre colchetes
+$is-dimensions-bracketed: is-bracketed($dimensions-bracketed);
+// Resultado: $is-dimensions-bracketed é true
+
+$is-dimensions-unbracketed: is-bracketed($dimensions-unbracketed);
+// Resultado: $is-dimensions-unbracketed é false
+
+$numbers1: 1, 2, 3;
+$numbers2: 4, 5, 6;
+
+// Junta as duas listas
+$combined-numbers: join($numbers1, $numbers2);
+
+// Resultado: $combined-numbers é '1, 2, 3, 4, 5, 6'
+
+// Junta as duas listas com espaço como separador
+$combined-numbers-space: join($numbers1, $numbers2, space);
+
+// Resultado: $combined-numbers-space é '1 2 3 4 5 6'
+
+// Junta as duas listas com colchetes
+$combined-numbers-bracketed: join($numbers1, $numbers2, comma, true);
+
+// Resultado: $combined-numbers-bracketed é '[1, 2, 3, 4, 5, 6]'
+
+$fruits: apple, banana, cherry;
+
+// Obtém o comprimento da lista
+$fruits-length: length($fruits);
+
+// Resultado: $fruits-length é 3
+
+$animals-comma: cat, dog, rabbit;
+$animals-space: cat dog rabbit;
+
+// Obtém o separador da lista
+$separator-animals-comma: list-separator($animals-comma);
+// Resultado: $separator-animals-comma é 'comma'
+
+$separator-animals-space: list-separator($animals-space);
+// Resultado: $separator-animals-space é 'space'
+
+$vehicles: car, bike, plane;
+
+// Obtém o segundo item da lista
+$second-vehicle: nth($vehicles, 2);
+
+// Resultado: $second-vehicle é 'bike'
+
+$seasons: winter, spring, summer;
+
+// Define o segundo item da lista como 'autumn'
+$updated-seasons: set-nth($seasons, 2, autumn);
+
+// Resultado: $updated-seasons é 'winter, autumn, summer'
+
+$letters: a, b, c;
+$numbers: 1, 2, 3;
+
+// Combina as listas
+$zipped-list: zip($letters, $numbers);
+
+// Resultado: $zipped-list é '(a 1), (b 2), (c 3)'

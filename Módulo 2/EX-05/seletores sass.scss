@@ -1,0 +1,34 @@
+// Verifica se '.container .item' é um superseletor de '.item'
+$is-super: is-superselector('.container .item', '.item');
+
+// Resultado: $is-super é true
+
+// Combina '.container' e '.item'
+$combined-selector: selector-append('.container', '.item');
+
+// Resultado: $combined-selector é '.container .item'
+
+// Aninha '.container' e '.item'
+$nested-selector: selector-nest('.container', '.item');
+
+// Resultado: $nested-selector é '.container .item'
+
+// Analisa o seletor '.container .item'
+$parsed-selector: selector-parse('.container .item');
+
+// Resultado: $parsed-selector é '(".container" ".item")'
+
+// Substitui '.item' por '.new-item' no seletor '.container .item'
+$replaced-selector: selector-replace('.container .item', '.item', '.new-item');
+
+// Resultado: $replaced-selector é '.container .new-item'
+
+// Unifica '.container' e '.item'
+$unified-selector: selector-unify('.container', '.item');
+
+// Resultado: $unified-selector é '.container.item'
+
+// Separa '.container .item'
+$simple-selectors: simple-selectors('.container .item');
+
+// Resultado: $simple-selectors é '(".container" ".item")'

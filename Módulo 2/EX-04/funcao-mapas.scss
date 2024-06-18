@@ -1,0 +1,74 @@
+$map: (
+  primary: blue,
+  secondary: green,
+  tertiary: red
+);
+
+// Obtém o valor associado à chave 'secondary'
+$secondary-color: map-get($map, secondary);
+
+// Resultado: $secondary-color é 'green'
+
+$map: (
+  primary: blue,
+  secondary: green,
+  tertiary: red
+);
+
+// Verifica se a chave 'primary' existe no mapa
+$has-primary: map-has-key($map, primary);
+
+// Resultado: $has-primary é true
+
+// Verifica se a chave 'quaternary' existe no mapa
+$has-quaternary: map-has-key($map, quaternary);
+
+// Resultado: $has-quaternary é false
+
+$map: (
+  primary: blue,
+  secondary: green,
+  tertiary: red
+);
+
+// Obtém todas as chaves do mapa
+$keys: map-keys($map);
+
+// Resultado: $keys é 'primary, secondary, tertiary'
+
+$map1: (
+  primary: blue,
+  secondary: green
+);
+
+$map2: (
+  tertiary: red,
+  quaternary: yellow
+);
+
+// Mescla os dois mapas
+$merged-map: map-merge($map1, $map2);
+
+// Resultado: $merged-map é '(primary: blue, secondary: green, tertiary: red, quaternary: yellow)'
+
+$map: (
+  primary: blue,
+  secondary: green,
+  tertiary: red
+);
+
+// Remove a chave 'secondary' do mapa
+$updated-map: map-remove($map, secondary);
+
+// Resultado: $updated-map é '(primary: blue, tertiary: red)'
+
+$map: (
+  primary: blue,
+  secondary: green,
+  tertiary: red
+);
+
+// Obtém todos os valores do mapa
+$values: map-values($map);
+
+// Resultado: $values é 'blue, green, red'
